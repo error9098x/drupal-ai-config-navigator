@@ -16,6 +16,14 @@ Drupal's extensive configuration system can be overwhelming for site builders. T
 
 **AI-powered natural-language assistant for finding Drupal admin configuration pages.** Built with **Reflex** (Python full-stack) + **Groq** (fast LLM inference) + **rapidfuzz** (hybrid retrieval).
 
+### 🚀 Live Demo
+
+**Try it now:** [https://config-nav-cyan-grass.reflex.run/](https://config-nav-cyan-grass.reflex.run/)
+
+### Screenshot
+
+<img src="screenshots/web_app_view_how_do_i_change_logo.png" alt="AI Config Navigator - Example query: How do I change the logo?" style="border-radius: 12px; border: 1px solid #1E293B; max-width: 100%;">
+
 ---
 
 ## What this PoC does
