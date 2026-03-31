@@ -1,0 +1,11 @@
+# Reflex - Python full-stack web framework (compiles to React + FastAPI)
+reflex>=0.6.0
+
+# Groq Python SDK - fast hosted LLM inference endpoint
+groq>=0.9.0
+
+# RapidFuzz - fast fuzzy string matching for hybrid retrieval
+rapidfuzz>=3.6.0
+
+# python-dotenv - load GROQ_API_KEY from .env file
+python-dotenv>=1.0.0

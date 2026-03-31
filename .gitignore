@@ -1,0 +1,75 @@
+assets/external/
+.web
+.states
+# ============================================================
+# Drupal Config Navigator PoC — .gitignore
+# ============================================================
+
+# --- Secrets (NEVER commit) ---------------------------------
+.env
+
+# --- Python -------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# --- Virtual environments -----------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# --- Reflex build artefacts ---------------------------------
+.web/
+.states/
+config_nav.db
+config_nav.db-journal
+*.db
+*.db-journal
+reflex.db
+
+# --- Reflex cache -------------------------------------------
+__pycache__/
+.reflex/
+
+# --- Node (Reflex compiles a Next.js frontend) --------------
+node_modules/
+.next/
+out/
+
+# --- macOS --------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# --- Editor -------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/
+
+# --- Logs ---------------------------------------------------
+*.log
+logs/
+
+# --- Testing ------------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# --- Python version pin (keep this IN source control) -------
+# .python-version   ← intentionally NOT ignored

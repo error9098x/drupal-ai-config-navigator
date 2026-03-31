@@ -1,0 +1,317 @@
+[
+  {
+    "title": "Site Information",
+    "path": "/admin/config/system/site-information",
+    "module": "system",
+    "description": "Configure site name, slogan, email address, front page path, and error pages (403/404).",
+    "keywords": ["site name", "site title", "slogan", "tagline", "homepage", "front page", "site email", "404", "403", "error pages", "website name"],
+    "synonyms": ["site settings", "general settings", "basic settings", "site details", "website title", "change site name"],
+    "permissions": ["administer site configuration"]
+  },
+  {
+    "title": "Appearance / Theme Settings",
+    "path": "/admin/appearance",
+    "module": "system",
+    "description": "Install, uninstall, and configure themes. Set the default theme and administration theme. Change site logo and favicon.",
+    "keywords": ["theme", "logo", "favicon", "design", "appearance", "install theme", "skin", "default theme", "admin theme", "branding", "change logo"],
+    "synonyms": ["theme settings", "site design", "visual design", "change look", "customize appearance", "site branding", "logo settings"],
+    "permissions": ["administer themes"]
+  },
+  {
+    "title": "Content Types",
+    "path": "/admin/structure/types",
+    "module": "node",
+    "description": "Create and manage content types. Each content type is a template defining fields and settings for a category of content (e.g. Article, Basic page).",
+    "keywords": ["content type", "node type", "article", "page", "custom content", "create content type", "add content type", "fields", "bundle"],
+    "synonyms": ["add content type", "new content type", "content structure", "content model", "post type", "node types"],
+    "permissions": ["administer content types"]
+  },
+  {
+    "title": "Block Layout",
+    "path": "/admin/structure/block",
+    "module": "block",
+    "description": "Configure blocks and assign them to regions in your theme. Control what content appears in sidebars, headers, footers, and other page regions.",
+    "keywords": ["block", "sidebar", "region", "header", "footer", "widget", "place block", "layout", "block placement"],
+    "synonyms": ["blocks", "block configuration", "block placement", "sidebar content", "widget placement", "region layout"],
+    "permissions": ["administer blocks"]
+  },
+  {
+    "title": "Menus",
+    "path": "/admin/structure/menu",
+    "module": "menu_ui",
+    "description": "Create and manage navigation menus. Add, edit, or reorder menu links. Configure main navigation, footer menu, and custom menus.",
+    "keywords": ["menu", "navigation", "nav", "menu link", "main menu", "footer menu", "navigation links", "add menu item", "reorder menu"],
+    "synonyms": ["navigation menu", "main navigation", "menu management", "add to menu", "menu items", "site navigation"],
+    "permissions": ["administer menu"]
+  },
+  {
+    "title": "Taxonomy Vocabularies",
+    "path": "/admin/structure/taxonomy",
+    "module": "taxonomy",
+    "description": "Create and manage taxonomy vocabularies and terms. Organize and classify content using tags, categories, and other classification systems.",
+    "keywords": ["taxonomy", "vocabulary", "terms", "tags", "categories", "classify", "labels", "tags field", "category field"],
+    "synonyms": ["tags", "categories", "classification", "content tags", "vocabularies", "term management"],
+    "permissions": ["administer taxonomy"]
+  },
+  {
+    "title": "People / User Management",
+    "path": "/admin/people",
+    "module": "user",
+    "description": "View and manage user accounts. Create, edit, block, or delete users. Manage user roles and assign roles to accounts.",
+    "keywords": ["users", "accounts", "people", "user list", "add user", "create user", "edit user", "block user", "delete user", "user management"],
+    "synonyms": ["user accounts", "manage users", "user list", "site members", "registered users", "account management"],
+    "permissions": ["administer users"]
+  },
+  {
+    "title": "Roles",
+    "path": "/admin/people/roles",
+    "module": "user",
+    "description": "Create and manage user roles. Roles group permissions and are assigned to users to control what they can do on the site.",
+    "keywords": ["roles", "user roles", "add role", "create role", "editor", "administrator", "authenticated", "anonymous", "custom role"],
+    "synonyms": ["user roles", "role management", "access roles", "create role", "new role"],
+    "permissions": ["administer permissions"]
+  },
+  {
+    "title": "Permissions",
+    "path": "/admin/people/permissions",
+    "module": "user",
+    "description": "Configure what each role is allowed to do. Grant or revoke specific permissions for anonymous users, authenticated users, editors, administrators, and custom roles.",
+    "keywords": ["permissions", "access control", "role permissions", "grant permission", "revoke permission", "who can", "access rights", "capabilities"],
+    "synonyms": ["access control", "role permissions", "user permissions", "set permissions", "configure access", "who can edit"],
+    "permissions": ["administer permissions"]
+  },
+  {
+    "title": "Extend / Install Modules",
+    "path": "/admin/modules",
+    "module": "system",
+    "description": "Browse, install, and uninstall Drupal modules. Enable new functionality by activating contributed or custom modules.",
+    "keywords": ["modules", "extend", "install module", "enable module", "disable module", "uninstall", "plugins", "extensions", "contrib"],
+    "synonyms": ["install modules", "enable modules", "module management", "add functionality", "extensions", "plugins"],
+    "permissions": ["administer modules"]
+  },
+  {
+    "title": "Cron / Automated Tasks",
+    "path": "/admin/config/system/cron",
+    "module": "system",
+    "description": "Configure and run cron tasks. Cron automates routine maintenance tasks such as indexing content, sending emails, and clearing caches on a schedule.",
+    "keywords": ["cron", "cron job", "scheduled tasks", "automation", "run cron", "cron frequency", "maintenance tasks", "background tasks"],
+    "synonyms": ["cron settings", "scheduled tasks", "automated tasks", "background jobs", "cron configuration"],
+    "permissions": ["administer site configuration"]
+  },
+  {
+    "title": "Mail System / Email Settings",
+    "path": "/admin/config/system/mailsystem",
+    "module": "mailsystem",
+    "description": "Configure the mail system used to send emails from your Drupal site. Set the default mail sender, SMTP server, and email formatting options.",
+    "keywords": ["email", "mail", "smtp", "send email", "email settings", "mail server", "outgoing mail", "email configuration", "from address"],
+    "synonyms": ["email settings", "mail configuration", "smtp settings", "outgoing email", "email setup", "configure email", "mail server"],
+    "permissions": ["administer site configuration"]
+  },
+  {
+    "title": "File System",
+    "path": "/admin/config/media/file-system",
+    "module": "system",
+    "description": "Configure public and private file system paths. Set the default download method for uploaded files and manage file storage locations.",
+    "keywords": ["file system", "file storage", "public files", "private files", "upload path", "file path", "download method", "file directory"],
+    "synonyms": ["file settings", "file storage settings", "upload settings", "media storage", "private file path"],
+    "permissions": ["administer site configuration"]
+  },
+  {
+    "title": "Text Formats and Editors",
+    "path": "/admin/config/content/formats",
+    "module": "filter",
+    "description": "Manage text formats (e.g. Full HTML, Basic HTML, Plain text) and configure the editors (CKEditor, etc.) associated with each format.",
+    "keywords": ["text format", "input format", "html", "ckeditor", "wysiwyg", "editor", "full html", "basic html", "plain text", "rich text", "format"],
+    "synonyms": ["text formats", "input formats", "editor settings", "html settings", "rich text editor", "ckeditor settings", "wysiwyg settings"],
+    "permissions": ["administer filters"]
+  },
+  {
+    "title": "Search Settings",
+    "path": "/admin/config/search/settings",
+    "module": "search",
+    "description": "Configure search settings, reindex content, and manage search pages. Control which content types are indexed and searched.",
+    "keywords": ["search", "search settings", "search index", "reindex", "search page", "full text search", "search configuration"],
+    "synonyms": ["search configuration", "site search", "search setup", "content search", "search index settings"],
+    "permissions": ["administer search"]
+  },
+  {
+    "title": "Languages",
+    "path": "/admin/config/regional/language",
+    "module": "language",
+    "description": "Add and configure languages for your site. Set the default language, detection methods, and enable multilingual support.",
+    "keywords": ["language", "multilingual", "add language", "default language", "locale", "translation", "i18n", "l10n", "language detection"],
+    "synonyms": ["language settings", "multilingual setup", "add language", "language configuration", "site language", "locale settings"],
+    "permissions": ["administer languages"]
+  },
+  {
+    "title": "Regional Settings / Date and Time",
+    "path": "/admin/config/regional/settings",
+    "module": "system",
+    "description": "Set the default timezone, date format, and time format for your site. Configure how dates and times are displayed.",
+    "keywords": ["timezone", "date format", "time format", "regional", "date", "time", "locale", "date settings", "time zone", "clock"],
+    "synonyms": ["timezone settings", "date and time", "regional settings", "time settings", "date configuration", "clock settings"],
+    "permissions": ["administer site configuration"]
+  },
+  {
+    "title": "Performance / Cache Settings",
+    "path": "/admin/config/development/performance",
+    "module": "system",
+    "description": "Configure caching, CSS and JavaScript aggregation, and other performance settings. Clear all site caches from this page.",
+    "keywords": ["cache", "performance", "clear cache", "css aggregation", "js aggregation", "page cache", "caching", "speed", "clear all caches", "rebuild cache"],
+    "synonyms": ["cache settings", "clear caches", "performance settings", "speed settings", "css cache", "js cache", "rebuild caches"],
+    "permissions": ["administer site configuration", "flush caches"]
+  },
+  {
+    "title": "Logging and Errors",
+    "path": "/admin/config/development/logging",
+    "module": "dblog",
+    "description": "Configure error logging, database log settings, and how many log messages to keep. Control what PHP errors are displayed.",
+    "keywords": ["logging", "errors", "error reporting", "log", "watchdog", "debug", "php errors", "error messages", "event log"],
+    "synonyms": ["error logging", "log settings", "debug settings", "php error reporting", "watchdog settings", "site logs"],
+    "permissions": ["administer site configuration"]
+  },
+  {
+    "title": "URL Aliases / Path Settings",
+    "path": "/admin/config/search/path",
+    "module": "path",
+    "description": "Manage URL aliases for your content. Create human-readable URLs and configure automatic path generation patterns.",
+    "keywords": ["url alias", "path alias", "url", "slug", "pathauto", "clean urls", "url pattern", "custom url", "path", "permalink"],
+    "synonyms": ["url settings", "path aliases", "clean urls", "url patterns", "permalink settings", "pathauto settings", "url configuration"],
+    "permissions": ["administer url aliases"]
+  },
+  {
+    "title": "Views",
+    "path": "/admin/structure/views",
+    "module": "views_ui",
+    "description": "Create and manage Views — powerful queries that display lists, tables, grids, and pages of content from your database.",
+    "keywords": ["views", "list", "table", "grid", "content list", "query", "display", "page view", "block view", "create view", "add view"],
+    "synonyms": ["views management", "content displays", "lists", "data views", "content queries", "view pages"],
+    "permissions": ["administer views"]
+  },
+  {
+    "title": "Image Styles",
+    "path": "/admin/config/media/image-styles",
+    "module": "image",
+    "description": "Create and manage image styles. Define scale, crop, and effect operations applied to uploaded images when displayed.",
+    "keywords": ["image styles", "image resize", "crop", "scale", "image effects", "thumbnail", "image processing", "image dimensions"],
+    "synonyms": ["image presets", "image sizes", "thumbnail settings", "image cropping", "image scaling", "media image settings"],
+    "permissions": ["administer image styles"]
+  },
+  {
+    "title": "Media Types",
+    "path": "/admin/structure/media",
+    "module": "media",
+    "description": "Create and manage media types (e.g. Image, Document, Video, Audio). Configure fields and display settings for each media type.",
+    "keywords": ["media", "media type", "image media", "document", "video", "audio", "file media", "media library", "media settings"],
+    "synonyms": ["media types", "media configuration", "media management", "file types", "media library types"],
+    "permissions": ["administer media"]
+  },
+  {
+    "title": "Content / Admin Content List",
+    "path": "/admin/content",
+    "module": "node",
+    "description": "Browse, filter, and manage all content on the site. Publish, unpublish, delete, or edit nodes in bulk.",
+    "keywords": ["content", "nodes", "articles", "pages", "content list", "manage content", "edit content", "delete content", "publish", "unpublish", "bulk operations"],
+    "synonyms": ["content management", "all content", "node list", "content overview", "manage pages", "content admin"],
+    "permissions": ["access content overview"]
+  },
+  {
+    "title": "Comments",
+    "path": "/admin/content/comment",
+    "module": "comment",
+    "description": "Manage comments on your site. Approve, delete, or edit comments. View unapproved and published comment queues.",
+    "keywords": ["comments", "moderation", "approve comments", "delete comments", "comment settings", "comment queue", "user comments"],
+    "synonyms": ["comment management", "comment moderation", "manage comments", "approve comments", "comment admin"],
+    "permissions": ["administer comments"]
+  },
+  {
+    "title": "Maintenance Mode",
+    "path": "/admin/config/development/maintenance",
+    "module": "system",
+    "description": "Put the site into maintenance mode to take it offline for visitors while allowing administrators to continue working.",
+    "keywords": ["maintenance mode", "offline", "down for maintenance", "site offline", "take site offline", "maintenance", "under construction"],
+    "synonyms": ["site maintenance", "offline mode", "take offline", "down for maintenance", "site down"],
+    "permissions": ["administer site configuration"]
+  },
+  {
+    "title": "Account Settings",
+    "path": "/admin/config/people/accounts",
+    "module": "user",
+    "description": "Configure user registration settings, password policies, email templates for account notifications, and profile field defaults.",
+    "keywords": ["account settings", "registration", "user registration", "password", "email template", "account email", "user profile", "registration settings"],
+    "synonyms": ["user settings", "registration settings", "account configuration", "sign up settings", "profile settings", "user account settings"],
+    "permissions": ["administer account settings"]
+  },
+  {
+    "title": "Contact Forms",
+    "path": "/admin/structure/contact",
+    "module": "contact",
+    "description": "Create and manage contact forms. Configure recipients, auto-reply messages, and which forms are available to visitors.",
+    "keywords": ["contact form", "contact page", "email form", "contact us", "feedback form", "form recipients", "contact settings"],
+    "synonyms": ["contact page settings", "contact us form", "email contact form", "feedback form", "contact configuration"],
+    "permissions": ["administer contact forms"]
+  },
+  {
+    "title": "Status Report",
+    "path": "/admin/reports/status",
+    "module": "system",
+    "description": "View a summary of your site's status, including PHP version, database version, filesystem permissions, update status, and any configuration issues.",
+    "keywords": ["status report", "site status", "health check", "php version", "server info", "site info", "system status", "configuration issues"],
+    "synonyms": ["system status", "health report", "site health", "server status", "site report", "diagnostic report"],
+    "permissions": ["administer site configuration"]
+  },
+  {
+    "title": "Available Updates",
+    "path": "/admin/reports/updates",
+    "module": "update",
+    "description": "Check for available updates to Drupal core and installed modules/themes. See which components need security or feature updates.",
+    "keywords": ["updates", "security updates", "module updates", "drupal updates", "update available", "outdated modules", "patches"],
+    "synonyms": ["module updates", "security updates", "check for updates", "update status", "available patches"],
+    "permissions": ["administer software updates"]
+  },
+  {
+    "title": "Date and Time Formats",
+    "path": "/admin/config/regional/date-time",
+    "module": "system",
+    "description": "Define named date and time formats used across your site. Customize how long, medium, and short date formats are displayed.",
+    "keywords": ["date format", "time format", "date display", "date configuration", "long date", "medium date", "short date", "custom date format"],
+    "synonyms": ["date formats", "time display", "date configuration", "time configuration", "custom date", "date display settings"],
+    "permissions": ["administer site configuration"]
+  },
+  {
+    "title": "Shortcuts",
+    "path": "/admin/config/user-interface/shortcut",
+    "module": "shortcut",
+    "description": "Manage shortcut sets and the links they contain. Shortcuts appear in the admin toolbar for quick access to frequently used pages.",
+    "keywords": ["shortcuts", "shortcut bar", "quick links", "toolbar shortcuts", "admin shortcuts", "favorite pages", "bookmarks"],
+    "synonyms": ["shortcut links", "quick access", "toolbar links", "admin bookmarks", "shortcut management"],
+    "permissions": ["administer shortcuts"]
+  },
+  {
+    "title": "RSS / Feed Publishing",
+    "path": "/admin/config/services/rss-publishing",
+    "module": "node",
+    "description": "Configure RSS feed settings including the number of items to display in feeds and the feed description length.",
+    "keywords": ["rss", "feed", "rss feed", "atom", "news feed", "syndication", "feed settings", "rss settings"],
+    "synonyms": ["rss settings", "feed configuration", "news feed", "content feed", "syndication settings"],
+    "permissions": ["administer site configuration"]
+  },
+  {
+    "title": "Responsive Image Styles",
+    "path": "/admin/config/media/responsive-image-style",
+    "module": "responsive_image",
+    "description": "Create responsive image styles that map image styles to browser breakpoints. Improves performance by serving appropriately sized images to different devices.",
+    "keywords": ["responsive image", "breakpoints", "srcset", "picture", "responsive design", "mobile images", "image breakpoints"],
+    "synonyms": ["responsive images", "responsive image configuration", "picture element", "srcset settings", "adaptive images"],
+    "permissions": ["administer responsive images"]
+  },
+  {
+    "title": "Database / Core Database Info",
+    "path": "/admin/reports/status",
+    "module": "system",
+    "description": "View database connection details, version, and status in the site status report. Perform database maintenance from the status report page.",
+    "keywords": ["database", "mysql", "postgres", "db", "database version", "database status", "db maintenance", "database info"],
+    "synonyms": ["database settings", "db info", "database maintenance", "database connection", "db status"],
+    "permissions": ["administer site configuration"]
+  }
+]
