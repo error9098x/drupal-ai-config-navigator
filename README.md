@@ -1,4 +1,4 @@
-# AI-Powered Configuration Navigator — GSoC 2026 PoC
+# AI-Powered Configuration Navigator -- GSoC 2026 PoC
 
 > **Google Summer of Code 2026 Proof of Concept**
 > 
@@ -16,13 +16,61 @@ Drupal's extensive configuration system can be overwhelming for site builders. T
 
 **AI-powered natural-language assistant for finding Drupal admin configuration pages.** Built with **Reflex** (Python full-stack) + **Groq** (fast LLM inference) + **rapidfuzz** (hybrid retrieval).
 
-### 🚀 Live Demo
+### Live Demo
 
 **Try it now:** [https://config-nav-cyan-grass.reflex.run/](https://config-nav-cyan-grass.reflex.run/)
 
 ### Screenshot
 
 <img src="screenshots/web_app_view_how_do_i_change_logo.png" alt="AI Config Navigator - Example query: How do I change the logo?" style="border-radius: 12px; border: 1px solid #1E293B; max-width: 100%;">
+
+---
+
+## Architecture
+
+```mermaid
+flowchart TB
+    subgraph User["User Interface"]
+        Q[User Query]
+        CB[Chat Bubbles]
+        CC[Candidate Cards]
+    end
+    
+    subgraph Frontend["Reflex Frontend"]
+        UI[React Components]
+        WS[WebSocket Stream]
+    end
+    
+    subgraph Backend["Reflex Backend"]
+        ST[State Manager]
+        RT[Retrieval Engine]
+        GR[Groq Client]
+    end
+    
+    subgraph Data["Data Layer"]
+        JSON[config_data.json<br/>100 Pages]
+        FUZ[rapidfuzz<br/>Fuzzy Matching]
+    end
+    
+    subgraph AI["AI Provider"]
+        GROQ[Groq API<br/>LLM Inference]
+    end
+    
+    Q --> UI
+    UI --> ST
+    ST --> RT
+    RT --> FUZ
+    FUZ --> JSON
+    RT -->|Top 5 Candidates| GR
+    GR --> GROQ
+    GROQ -->|Streamed Tokens| WS
+    WS --> CB
+    RT -->|Paths & Scores| CC
+    
+    style Q fill:#3B82F6,color:#fff
+    style GROQ fill:#8B5CF6,color:#fff
+    style JSON fill:#10B981,color:#fff
+```
 
 ---
 
